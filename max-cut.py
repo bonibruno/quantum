@@ -29,3 +29,22 @@ sampleset = sampler.sample_qubo(Q, num_reads=1000)
 
 # Print the result
 print(sampleset)
+
+#
+# Sample output
+#
+#   0  1  2  3 energy num_occurrences
+#0  1  0  1  0   -2.0             205
+#1  0  1  0  1   -2.0             195
+#2  1  1  0  0   -1.0             100
+#3  0  0  1  1   -1.0             300
+#4  1  0  0  1   -1.0             100
+#5  0  1  1  0   -1.0             100
+#['BINARY', 6 rows, 1000 samples, 4 variables]
+
+#
+# 
+#  The columns labeled 0, 1, 2, and 3 correspond to the values of the qubits for different solutions. 
+#  The energy column represents the energy of each solution (with lower energies corresponding to better solutions), and the num_occurrences column shows how many times each solution was sampled during the annealing process.
+
+# Please note that the actual output will depend on the specific problem, the quantum device, the parameters passed to the sampler, and the inherent probabilistic nature of quantum annealing. It's typical to see variations in the output between different runs of the same code.
